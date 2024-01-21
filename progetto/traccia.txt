@@ -1,0 +1,29 @@
+Posteggio a tre Piano
+Un parcheggio a tre piani di 10 posti a piano ha la possibilità di poter parcheggiare due
+possibili tipologie di vetture: a) Automobili b) Veicoli Commerciali che occupano due
+posti auto. Le auto possono essere ospitate in uno dei tre piani, mentre i Veicoli
+Commerciali possono essere ospitati solo al piano terra.
+Si progetti una Web application in Node.Js o un Client/Server in linguaggio C in cui le
+vetture sono Client ed il gestore del parcheggio è il Server.
+● I Client una volta collegato
+○ Invia una stringa “Nome e cognome”
+○ In caso di parcheggio
+■ invia la tipologia del proprio veicolo A o V attendendo la
+risposta del Server, o la richiesta di ritiro della vettura
+■ Riceve un “OK” dal Server se vi è posto nel parcheggio ,”KO”
+viceversa
+■ In caso positivo il Client riceve un ID per ritiro della vetture
+○ In caso di ritiro invia R ed il proprio codice di ritiro
+● Il Server una volta collegato
+○ Acquisisce il nominativo del Client e o la tipologia del mezzo o R
+insiema al codice di ritiro
+○ Se il cliente vuole parcheggiare controlla se è possibile
+■ in caso positivo invia “OK” ed un codice di parcheggio
+■ se no invia KO
+○ Se il cliente vuole ritirare controlla il codice e se corretto liberara il
+posto
+Alla fine della simulazione si conservi su di un file l’informazione (Nome,Gognome,Tipo
+di vettura , tempo di sosta.)
+In caso di gruppo composta da due studenti l’informazione deve essere inserita in un
+DataBase e visualizzabile in una pagina web
+
